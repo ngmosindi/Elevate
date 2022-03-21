@@ -9,7 +9,7 @@ resource "aws_vpc" "main_vpc" {
     Name = "${var.domain}-${var.env}-main-vpc"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 
@@ -31,7 +31,7 @@ resource "aws_subnet" "main_subnet_elb_1a" {
     SubnetType = "Utility"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 resource "aws_subnet" "main_subnet_elb_1b" {
@@ -44,7 +44,7 @@ resource "aws_subnet" "main_subnet_elb_1b" {
     SubnetType = "Utility"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 resource "aws_subnet" "main_subnet_web_1a" {
@@ -57,7 +57,7 @@ resource "aws_subnet" "main_subnet_web_1a" {
     SubnetType = "Private"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 resource "aws_subnet" "main_subnet_web_1b" {
@@ -70,7 +70,7 @@ resource "aws_subnet" "main_subnet_web_1b" {
     SubnetType = "Private"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 
@@ -84,7 +84,7 @@ resource "aws_subnet" "main_subnet_app_1a" {
     SubnetType = "Private"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 resource "aws_subnet" "main_subnet_app_1b" {
@@ -97,7 +97,7 @@ resource "aws_subnet" "main_subnet_app_1b" {
     SubnetType = "Private"
   }
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 }
 
